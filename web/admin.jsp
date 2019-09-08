@@ -28,11 +28,11 @@
 <head>
     <title>博客管理</title>
 
-    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="js/admin.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="/js/admin.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="image/blog.png" />
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="/image/blog.png" />
+    <link rel="stylesheet" href="/css/admin.css">
 </head>
 <script type="text/javascript">
     /*子菜单*/

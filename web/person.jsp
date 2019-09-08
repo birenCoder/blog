@@ -19,10 +19,10 @@
 <html>
 <head>
     <title>个人信息</title>
-    <link rel="stylesheet" href="css/person.css">
-    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="/css/person.css">
+    <script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="image/blog.png" />
+    <link rel="shortcut icon" href="/image/blog.png" />
 </head>
 <script type="text/javascript">
   window.onload = function () {

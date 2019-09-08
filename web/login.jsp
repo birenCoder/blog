@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>登录</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/login.css"/>
     <script src="js/login.js"></script>
 </head>
 <!--引用头文件-->
@@ -19,14 +19,15 @@
 <body>
     <!--登录界面-->
     <div id="log">
+        <div id="msg" ><p style="color: red;font-size: 22px;position: absolute;left: 40%">${MESSAGE}</p></div>
         <div id="login" align="center">
-            <form action="user?oper=login" method="post" onsubmit="return check()" >
+            <form action="${pageContext.request.contextPath}/logon" method="post" onsubmit="return check()" >
                 <p >登录</p>
-                <input type="text" name="uname" id="uname" placeholder="帐号" onblur="check_Name()" />
+                <input type="text" name="username" id="uname" placeholder="帐号" onblur="check_Name()" />
                 <br />
                 <label id="lname"></label>
                 <br />
-                <input type="password" name="pwd" id="pwd" placeholder="密码" onblur="check_Pwd()"/>
+                <input type="password" name="password" id="pwd" placeholder="密码" onblur="check_Pwd()"/>
                 <br />
                 <label id="lpwd"></label>
                 <br />
@@ -38,10 +39,10 @@
         </div>
     </div>
 </body>
-    <%--<script type="text/javascript">--%>
-        <%--setTimeout( function(){--%>
-            <%--var tip = document.getElementById("tip");--%>
-            <%--tip.innerHTML = "";--%>
-        <%--}, 3000);--%>
-    <%--</script>--%>
+    <script type="text/javascript">
+        setTimeout( function(){
+            var msg = document.getElementById("msg");
+            msg.innerHTML = "";
+        }, 3000);
+    </script>
 </html>

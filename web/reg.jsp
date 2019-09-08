@@ -10,16 +10,16 @@
 <html>
 <head>
     <title>注册</title>
-    <link rel="stylesheet" href="css/reg.css">
-    <script src="js/reg.js"></script>
+    <link rel="stylesheet" href="/css/reg.css">
+    <script src="/js/reg.js"></script>
 </head>
 <!--引用头文件-->
 <jsp:include page="head.jsp"></jsp:include>
 
 <body>
     <div class="reg">
+        <div id="msg" ><p style="color: red;position: absolute;font-size: 22px;left: 41%;">${MESSAGE}</p></div>
         <form action="${pageContext.request.contextPath}/register" method="post" onsubmit="return check()">
-            <div class="msg" ><p style="color: red">123dwd5wd</p></div>
             <p>注册</p>
             <span class="reg-lefts">账&nbsp;&nbsp;&nbsp;号:</span>
             <input type="text" class="inputs" name="username" id="user" value="" onblur="checkUser()"/>
@@ -62,4 +62,10 @@
         </form>
     </div>
 </body>
+    <script type="text/javascript">
+        setTimeout( function(){
+            var msg = document.getElementById("msg");
+              msg.innerHTML = "";
+        }, 3000);
+    </script>
 </html>

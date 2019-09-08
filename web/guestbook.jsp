@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <title>留言</title>
-    <link rel="stylesheet" href="css/guestbook.css">
+    <link rel="stylesheet" href="/css/guestbook.css">
 </head>
 <!--引用头文件-->
 <jsp:include page="head.jsp"></jsp:include>

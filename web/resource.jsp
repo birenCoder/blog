@@ -13,8 +13,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>资源</title>
-        <link rel="stylesheet" href="css/resource.css" />
-        <script type="text/javascript" src="js/resource.js"></script>
+        <link rel="stylesheet" href="/css/resource.css" />
+        <script type="text/javascript" src="/js/resource.js"></script>
     </head>
     <!--引用头文件-->
     <jsp:include page="head.jsp"></jsp:include>

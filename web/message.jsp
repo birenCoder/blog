@@ -10,17 +10,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet"  href="css/head.css" />
-    <link rel="stylesheet" type="text/css" href="css/message.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/message.css"/>
     <title>彼人博客</title>
 </head>
 <!--引用头文件-->
 <jsp:include page="head.jsp"></jsp:include>
 <body>
 
+    <div class="message" >
+        <h2>信息提示：</h2>
+        <p>${MESSAGE}</p>
+    </div>
 
-<div>
-    message提示信息：<p>${ACTIVE_MESSAGE}</p>
-</div>
 </body>
 </html>
