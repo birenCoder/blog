@@ -4,16 +4,22 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace 相当与实现类的全路径（包名+类名） -->
 <mapper	namespace="com.xu.mapper.UserMapper">
-    <!--开启缓存-->
-    <cache readOnly="true"></cache>
+
     <!--用户注册-->
     <insert id="insUser" parameterType="User">
         insert into `user`(id,username,password,realname,sex,time,mail,active,mailcode)
           values (default,#{username},#{password},#{realname},#{sex},#{time},#{mail},#{active},#{mailcode})
     </insert>
-
-
-
-
-
+    <!--用户查找-->
+    <select id="selUserByMailcode" parameterType="String" resultType="User">
+        select * from `user` where mailcode = #{mailcode}
+    </select>
+    <!--修改激活状态-->
+    <update id="updActiveByUserID" parameterType="int">
+        update `user` set active = 'Y'  where id = #{id}
+    </update>
+    <!--用户登录-->
+    <select id="selUserByUnameAndPwd"  resultType="User">
+        select * from `user` where username = #{param1} and password = #{param2}
+    </select>
 </mapper>

@@ -9,4 +9,26 @@ public interface UserMapper {
      * @return
      */
     int insUser(User u);
+
+    /**
+     * 用户查找-
+     * @param mailcode
+     * @return
+     */
+    User selUserByMailcode(String mailcode);
+
+    /**
+     *  修改激活状态
+     * @param id
+     * @return
+     */
+    int updActiveByUserID(int id);
+
+    /**
+     * 用户登录
+     * @param username
+     * @param password
+     * @return
+     */
+    User selUserByUnameAndPwd(String username, String password);
 }
